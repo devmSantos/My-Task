@@ -6,7 +6,7 @@
 
 
 ``` bash
-# install dependencies
+# Folder
 cd webnotes
 
 # install dependencies

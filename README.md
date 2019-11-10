@@ -1,6 +1,6 @@
 # Web Notes
 
-> This is the final project folder for FirebaseUI Auth for Vue with Facebook, Google and Email Blog
+> This is the Web Notes project folder for FirebaseUI Auth for Vue with Facebook, Google and Email Blog
 
 ## Build Setup
 

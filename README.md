@@ -4,6 +4,9 @@
 
 ## Build Setup
 
+# Folder
+cd webnotes
+
 ``` bash
 # install dependencies
 npm install

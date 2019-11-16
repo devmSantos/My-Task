@@ -2,15 +2,6 @@
   <section>
     <navigation></navigation>
     <br />
-    <h5 class="center-align">To-Dos</h5>
-    <ul class="collection with-header card-panel N/A transparent ">
-      <li class="collection-header">
-        <div class="row ">
-          <div class="input-field col s10  ">
-            <input id="new_todo" type="text" class="validate " v-model="todo.title" />
-          </div>
-          <div class="input-field col s2 ">
-            <button class="btn btn-floating  waves-effect waves-light blue" @click="addTodo">+</button>
 
           </div>
         </div>
@@ -31,7 +22,6 @@
               :checked="todo.isCompleted"
               @change="updateTodoItem(todo.id, $event)"
             />
-            <span></span>
           </label>
         </span>
       </li>

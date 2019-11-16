@@ -21,24 +21,6 @@
           <i class="material-icons right">more_vert</i>
         </span>
     
-      </div>
-      <div class="card-reveal">
-        <span class="card-title grey-text text-darken-4">
-          Profile
-          <i class="material-icons right">close</i>
-        </span>
-        <p>
-          name:
-          <strong>{{user.displayName}}</strong>
-          <br />email:
-          <strong>{{user.email}}</strong>
-          <br />uid:
-          <strong>{{user.uid}}</strong>
-          <br />provider:
-          <strong class="teal-text">{{user.providerData[0].providerId}}</strong>
-        </p>
-      </div>
-    </div>
   </section>
 </template>
 

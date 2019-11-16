@@ -1,7 +1,8 @@
 <template>
     <section>
         <navigation></navigation>
-        <h5 class="center-align">Login</h5>
+        <br>
+        <br>
         <section id="firebaseui-auth-container"></section>
     </section>
 </template>
@@ -26,7 +27,7 @@ export default {
             ui = new firebaseui.auth.AuthUI(firebase.auth());
         }
         var uiConfig = {
-            signInSuccessUrl: "/profile", // This redirect can be achived by route using callback.
+            signInSuccessUrl: "/todo", // This redirect can be achived by route using callback.
             signInFlow: "popup",
 
             signInOptions: [

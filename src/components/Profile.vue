@@ -2,25 +2,25 @@
   <section>
     <navigation></navigation>
 
-    <!-- Title -->
-    <h5 class="center-align">Profile</h5>
-    <!-- end Title -->
+    <br />
 
-    <div class="card" style="max-width:410px;margin:0 auto;" v-if="user">
-      <div class="waves activator waves-block waves-light center">
-        <img
-          class="center"
-          :src="user.photoURL"
-          style="width:75px;height:75px;border-radius:50%;margin-top:5px"
-        />
+    <div class="card" style="width: 25rem; margin:0 auto;" v-if="user">
+      <img
+        :src="user.photoURL"
+        class="card-img-top"
+        style="width:75px;height:75px;border-radius:50%;margin-top:30px; margin:0 auto;"
+      />
+      <div class="card-body">
+        <p class="card-text text-center">In my box, I see</p>
       </div>
 
-      <div class="card-content">
-        <span class="card-title activator center grey-text text-darken-4">
-          Informações
-          <i class="material-icons right">more_vert</i>
-        </span>
-    
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item ">Name: <span class="badge badge-pill badge-danger">{{user.displayName}}</span></li>
+        <li class="list-group-item">Email: <span class="badge badge-pill badge-info">{{user.email}}</span></li>
+        <li class="list-group-item">ID: <span class="badge badge-pill badge-dark">{{user.uid}}</span></li>
+        <li class="list-group-item">Provider: <span class="badge badge-pill badge-success">{{user.providerData[0].providerId}}</span></li>
+      </ul>
+    </div>
   </section>
 </template>
 

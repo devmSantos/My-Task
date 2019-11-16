@@ -3,29 +3,45 @@
     <navigation></navigation>
     <br />
 
+    <form >
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <input type="text" id="new_todo" class="form-control validate" v-model="todo.title" />
+          <div class="input-group-append">
+            <button
+              class="btn "  style="background-color: #33b5e5; color:white;"
+              type="button"
+              id="button-addon"
+              @click="addTodo"
+            >Button</button>
           </div>
         </div>
-      </li>
-      <li
-        class="collection-item "
-        v-for="todo in todos"
-        :key="todo.id"
-        :class="{ fade: todo.isCompleted }"
-      >
-        <span class="deleteIcon" @click="deleteToDo(todo.id)">&#10005;</span>
-        {{todo.title}}
-        <span class="secondary-content">
-          <label>
-            <input
-              type="checkbox"
-              class="filled-in"
-              :checked="todo.isCompleted"
-              @change="updateTodoItem(todo.id, $event)"
-            />
-          </label>
-        </span>
-      </li>
-    </ul>
+      </div>
+
+
+      <ul class="list-group card">
+        <li
+          class="list-group-item"  style=" height: 60px;"
+          v-for="todo in todos"
+          :key="todo.id"
+          :class="{ fade: todo.isCompleted }"
+        >
+          <span class="deleteIcon" @click="deleteToDo(todo.id)">&#10005;</span>
+          {{todo.title}}
+          <span class="secondary-content">
+            <label>
+              <input
+                type="checkbox"
+                id="blankCheckbox"
+                class="filled-in"
+                :checked="todo.isCompleted"
+                @change="updateTodoItem(todo.id, $event)"
+              />
+            </label>
+          </span>
+        </li>
+      </ul>
+    </form>
   </section>
 </template>
 
@@ -104,7 +120,7 @@ export default {
   opacity: 0.4 !important;
 }
 li {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .collection.with-header {
   max-width: 500px;
@@ -113,9 +129,22 @@ li {
 .deleteIcon {
   margin-right: 10px;
   cursor: pointer;
+ 
 }
 .deleteIcon:hover {
   opacity: 0.5;
 }
+
+/* input[type="checkbox"]{
+  float: right;
+} */
+
+form {
+  width:80%;
+  margin: 0 auto;
+ 
+}
+
+
 </style>
 

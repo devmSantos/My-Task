@@ -8,10 +8,10 @@
       <img
         :src="user.photoURL"
         class="card-img-top"
-        style="width:75px;height:75px;border-radius:50%;margin-top:30px; margin:0 auto;"
+        style="width:75px;height:75px;border-radius:50%;margin-top:20px; margin:0 auto;"
       />
       <div class="card-body">
-        <p class="card-text text-center">In my box, I see</p>
+        <p class="card-text text-center">Infos</p>
       </div>
 
       <ul class="list-group list-group-flush">

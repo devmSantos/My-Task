@@ -1,5 +1,5 @@
 
-var cacheName = 'Web Notes';
+var cacheName = 'Web todo';
 var filesToCache = [
   '/',
   '/index.html'

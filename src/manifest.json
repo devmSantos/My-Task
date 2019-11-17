@@ -1,6 +1,6 @@
 {
-    "name": "WEB NOTES",
-    "short_name": "Notes",
+    "name": "WEB To do",
+    "short_name": "To-do",
     "icons": [{
       "src": "icons/icon-128x128.png",
         "sizes": "128x128",
@@ -27,6 +27,6 @@
     "start_url": "/index.html",
     "gcm_sender_id": "103953800507",
     "display": "standalone",
-    "background_color": "#ff3374",
-    "theme_color": "#ff3374"
+    "background_color": "#33b5e5",
+    "theme_color": "#33b5e5"
   }

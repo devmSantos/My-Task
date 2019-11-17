@@ -66,7 +66,7 @@ router.beforeEach((to, from, next) => {
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
         next({
-          path: "/profile",
+          path: "/todo",
         })
       } else {
         next()

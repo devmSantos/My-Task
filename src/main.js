@@ -9,7 +9,7 @@ import firebase from 'firebase'
 Vue.config.productionTip = false
 
 
-const firebaseConfig = {
+const config = {
   apiKey: "AIzaSyCfYZQs9xT6pkK-m_7wWDlsoA7GwN3HdMk",
   authDomain: "authvue-d79e2.firebaseapp.com",
   databaseURL: "https://authvue-d79e2.firebaseio.com",
@@ -19,7 +19,7 @@ const firebaseConfig = {
   appId: "1:220378481886:web:d58647bcae44f84b08ee4f",
   measurementId: "G-V3TRW0BPCE"
 };
-firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(config);
 
 
 /* eslint-disable no-new */

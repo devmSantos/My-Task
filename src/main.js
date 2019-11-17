@@ -22,10 +22,6 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, options);
-});
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

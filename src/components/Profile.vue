@@ -8,17 +8,17 @@
       <img
         :src="user.photoURL"
         class="card-img-top"
-        style="width:75px;height:75px;border-radius:50%;margin-top:20px; margin:0 auto;"
+        style="width:75px;height:75px;border-radius:50%;margin-top:25px; margin:0 auto;"
       />
       <div class="card-body">
-        <p class="card-text text-center">Infos</p>
+        <h4 class="card-text text-center">Informations</h4>
       </div>
 
       <ul class="list-group list-group-flush">
-        <li class="list-group-item ">Name: <span class="badge badge-pill badge-danger">{{user.displayName}}</span></li>
+        <li class="list-group-item ">Name: <span class="badge badge-pill badge-dark">{{user.displayName}}</span></li>
         <li class="list-group-item">Email: <span class="badge badge-pill badge-info">{{user.email}}</span></li>
         <li class="list-group-item">ID: <span class="badge badge-pill badge-dark">{{user.uid}}</span></li>
-        <li class="list-group-item">Provider: <span class="badge badge-pill badge-success">{{user.providerData[0].providerId}}</span></li>
+        <li class="list-group-item">Provider: <span class="badge badge-pill badge-info">{{user.providerData[0].providerId}}</span></li>
       </ul>
     </div>
   </section>

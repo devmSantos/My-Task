@@ -1,13 +1,13 @@
-# Web Notes
+# My Task
 
-> This is the Web Notes project folder for FirebaseUI Auth for Vue with Facebook, Google and Email Blog
+> This is the My Task project folder for FirebaseUI Auth for Vue with Facebook, Google and Email Blog
 
 ## Build Setup
 
 
 ``` bash
 # Folder
-cd webnotes
+cd My Task
 
 # install dependencies
 npm install

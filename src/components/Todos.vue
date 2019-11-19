@@ -9,7 +9,7 @@
           <input type="text" id="new_todo" class="form-control validate" v-model="todo.title" />
           <div class="input-group-append">
             <button
-              class="btn "  style="background-color: #33b5e5; color:white;"
+              class="btn "  style="background-color: #02cab3; color:white;"
               type="button"
               id="button-addon"
               @click="addTodo"

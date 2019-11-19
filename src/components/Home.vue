@@ -3,25 +3,23 @@
     <navigation></navigation>
     <br />
 
-    <div class="container">
-      <h1 class="text-center">Web To-Do</h1>
+    <div class="container ">
+      <img class="center" style="height: 4rem" src="https://theme.zdassets.com/theme_assets/2393343/78d8e3134f264bd79aea43d8580d50df551d21fd.png" alt="" srcset="">
       <br />
       <div class="row text-center align-items-center">
         <br />
-        <div
-          class="col"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        <div class="col"><h4>Make your life more easy !</h4>
+        <h4> Add your tasks with one click</h4>
+        </div>
       </div>
       <br />
+       
       <div class="row text-center align-items-center">
         <br />
         <br />
         <div class="col">
           <br />
-          <img
-            src="https://uploads-ssl.webflow.com/5bcb46130508ef456a7b2930/5cef7d8a285aec3a1c405dd2_grape-pack-illustration-10.png"
-            alt
-          />
+          <img style="width: 20rem" v-bind:src="'/static/undraw_project_completed_w0oq.svg'" />
         </div>
       </div>
     </div>
@@ -42,3 +40,12 @@ export default {
   }
 };
 </script>
+
+
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>

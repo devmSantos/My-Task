@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #33b5e5;">
-     <a class="navbar-brand" href="/">To Do</a>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #02cab3;">
+     <a class="navbar-brand" href="/">My Task</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -14,12 +14,12 @@
           <router-link class="nav-link" to="/login">Login</router-link>
         </li>
         <li v-show="user" class="nav-item active">
-          <router-link class="nav-link" to="/todo">To-Do</router-link>
+          <router-link class="nav-link" to="/todo">Task</router-link>
         </li>
         <li v-show="user" class="nav-item active">
           <router-link class="nav-link" to="/profile">Profile</router-link>
         </li>
-        <li v-show="user" class="nav-link">
+        <li v-show="user" class="nav-link active">
           <a @click="signoutButtonPressed">Logout</a>
         </li>
       </ul>

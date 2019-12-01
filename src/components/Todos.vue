@@ -2,14 +2,20 @@
   <section>
     <navigation></navigation>
     <br />
-
-    <form >
+    <br>
+    <br>
+ <!--==========================
+    Intro Section
+    ============================-->
+    <section id="about" class="clearfix">
+      <div class="container">
+         <form >
       <div class="form-group">
         <div class="input-group mb-3">
           <input type="text" id="new_todo" class="form-control validate" v-model="todo.title" />
           <div class="input-group-append">
             <button
-              class="btn "  style="background-color: #02cab3; color:white;"
+              class="btn "  style="background-color: #007bff; color:white;"
               type="button"
               id="button-addon"
               @click="addTodo"
@@ -42,6 +48,10 @@
         </li>
       </ul>
     </form>
+      </div>
+    </section>
+    <!-- #intro -->
+   
   </section>
 </template>
 

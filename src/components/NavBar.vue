@@ -1,32 +1,28 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #02cab3;">
-     <a class="navbar-brand" href="/">My Task</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-  
-      <ul id="nav-mobile" class="navbar-nav">
-        <li class="nav-item active">
-          <router-link class="nav-link" to="/" tag="a">Home</router-link>
-        </li>
-        <li v-show="!user" class="nav-item active">
-          <router-link class="nav-link" to="/login">Login</router-link>
-        </li>
-        <li v-show="user" class="nav-item active">
-          <router-link class="nav-link" to="/todo">Task</router-link>
-        </li>
-        <li v-show="user" class="nav-item active">
-          <router-link class="nav-link" to="/profile">Profile</router-link>
-        </li>
-        <li v-show="user" class="nav-link active">
-          <a @click="signoutButtonPressed">Logout</a>
-        </li>
-      </ul>
-    </div>
+   <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
 
-    
-  </nav>
+      <div class="logo float-left center" style="width: 5.5em;" >
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
+        <a href="/" class="scrollto"><img src="https://theme.zdassets.com/theme_assets/2393343/78d8e3134f264bd79aea43d8580d50df551d21fd.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="main-nav float-right  d-lg-block">
+        <ul>
+          <li class="active"> <router-link class="nav-link" to="/" tag="a">Home</router-link></li>
+          <li v-show="!user" > <router-link class="nav-link" to="/login">Login</router-link></li>
+          <li v-show="user"><router-link class="nav-link" to="/todo">Task</router-link></li>
+          <li v-show="user"> <router-link class="nav-link" to="/profile">Profile</router-link></li>
+          <li v-show="user"> <a @click="signoutButtonPressed">Logout</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
 </template>
 
 <script>
@@ -69,4 +65,5 @@ export default {
   }
 };
 </script>
+
 

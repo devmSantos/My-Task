@@ -1,10 +1,9 @@
 <template>
-  <section>
+  <section id="intro">
     <navigation></navigation>
 
-    <br />
 
-    <div class="card" style="width: 25rem; margin:0 auto;" v-if="user">
+    <div class="card" id="" style="width: 25rem; margin:0 auto;" v-if="user">
       <img
         :src="user.photoURL"
         class="card-img-top"

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="about">
         <navigation></navigation>
         <br>
         <br>

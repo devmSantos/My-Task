@@ -1,6 +1,6 @@
 # My Task
 
-> This is the My Task project folder for FirebaseUI Auth for Vue with Facebook, Google and Email Blog
+> FirebaseUI Auth, VueJS
 
 ## Build Setup
 
